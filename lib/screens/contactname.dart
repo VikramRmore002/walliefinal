@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:walliefinal/custom_class/contact.dart';
 import 'preference.dart';
 //import 'package:firebase_database/firebase_database.dart';
@@ -22,7 +23,7 @@ class _ContactNameState extends State<ContactName> {
   String _firstName = "";
   String _lastName = "";
   String _email = "";
-  String _dateofbirth = "";
+   late String _dateofbirth ;
   String _phoneNumber = "";
   List _tops = [];
   List _bottoms = [];
@@ -33,6 +34,7 @@ class _ContactNameState extends State<ContactName> {
         _dateofbirth.isNotEmpty) {
       setState(() {
         _phoneNumber = phoneNumber;
+
       });
       Contact contact = Contact(_firstName, _lastName, _email, _dateofbirth,
           phoneNumber, _bottoms, _tops);
@@ -85,7 +87,7 @@ class _ContactNameState extends State<ContactName> {
   final TextEditingController firstname = TextEditingController();
   final TextEditingController lastname = TextEditingController();
   final TextEditingController email = TextEditingController();
-  final TextEditingController dob = TextEditingController();
+  // final TextEditingController dob = TextEditingController();
   late String value;
   _ContactNameState(this.phoneNumber);
   @override
@@ -259,45 +261,68 @@ class _ContactNameState extends State<ContactName> {
                         },
                       ),
                     ),
+                    // Padding(
+                    //   padding: const EdgeInsets.all(10.0),
+                    //   child: TextFormField(
+                    //     controller: dob,
+                    //     style: const TextStyle(
+                    //       fontFamily: "walle",
+                    //     ),
+                    //     keyboardType: TextInputType.number,
+                    //     onChanged: (value) {
+                    //       setState(() {
+                    //         _dateofbirth = dob.text;
+                    //       });
+                    //     },
+                    //     decoration: InputDecoration(
+                    //       fillColor: Colors.white,
+                    //       filled: true,
+                    //       prefixIcon: const Icon(
+                    //         Icons.cake,
+                    //         color: Colors.black54,
+                    //       ),
+                    //       //suffixIcon: IconButton(onPressed: () { _pickDate(); }, icon: Icon(Icons.date_range),),
+                    //       labelText: "Date_Of_Birth ",
+                    //       labelStyle: const TextStyle(
+                    //         fontFamily: "walle",
+                    //       ),
+                    //       // hintText:("${pickedDate.day.toString()}/${pickedDate.month.toString()}/${pickedDate.year.toString()}"),
+                    //       enabledBorder: OutlineInputBorder(
+                    //         borderRadius: BorderRadius.circular(10.0),
+                    //       ),
+                    //     ),
+                    //     // The validator receives the text that the user has entered.
+                    //     validator: (value) {
+                    //       if (value!.isEmpty) {
+                    //         return 'Enter Date_Of_Birth';
+                    //       }
+                    //       return null;
+                    //     },
+                    //   ),
+                    // ),
+                    Padding(padding: EdgeInsets.only(top: 10),),
                     Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: TextFormField(
-                        controller: dob,
-                        style: const TextStyle(
-                          fontFamily: "walle",
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          border: Border.all(color: Colors.black),
+                          borderRadius: BorderRadius.circular(10),
                         ),
-                        keyboardType: TextInputType.number,
-                        onChanged: (value) {
-                          setState(() {
-                            _dateofbirth = dob.text;
-                          });
-                        },
-                        decoration: InputDecoration(
-                          fillColor: Colors.white,
-                          filled: true,
-                          prefixIcon: const Icon(
-                            Icons.cake,
-                            color: Colors.black54,
+                        height: 60,
+                          child: ListTile(
+                            leading: Icon(Icons.cake),
+                            title:  Text(_dateofbirth),
+                            trailing: IconButton(
+                              onPressed: getDatePicker,
+                              icon: Icon( Icons.date_range,size: 30,),
+                            ),
                           ),
-                          //suffixIcon: IconButton(onPressed: () { _pickDate(); }, icon: Icon(Icons.date_range),),
-                          labelText: "Date_Of_Birth ",
-                          labelStyle: const TextStyle(
-                            fontFamily: "walle",
-                          ),
-                          // hintText:("${pickedDate.day.toString()}/${pickedDate.month.toString()}/${pickedDate.year.toString()}"),
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                        ),
-                        // The validator receives the text that the user has entered.
-                        validator: (value) {
-                          if (value!.isEmpty) {
-                            return 'Enter Date_Of_Birth';
-                          }
-                          return null;
-                        },
+                          //color: Colors.white
+
                       ),
                     ),
+
                   ],
                 ),
               ),
@@ -330,64 +355,33 @@ class _ContactNameState extends State<ContactName> {
     );
   }
 
-  // Widget _textFormFieldPhoneNumber(
-  //     {required bool first,
-  //     last,
-  //     required String? hintText,
-  //     required TextEditingController textEditingController,
-  //     required Function() onChanged}) {
-  //   return Container(
-  //       child: TextFormField(
-  //           controller: textEditingController,
-  //           showCursor: false,
-  //           autofocus: true,
-  //           // textInputAction: TextInputAction.next,
-  //           validator: (value) {
-  //             if (value!.isEmpty) {
-  //               const Text(" please provide name",
-  //                   style: TextStyle(
-  //                     fontFamily: "walle",
-  //                   ));
-  //             }
-  //           },
-  //           textAlign: TextAlign.start,
-  //           keyboardType: TextInputType.text,
-  //           decoration: InputDecoration(hintText: hintText),
-  //           style: const TextStyle(
-  //               fontFamily: "walle",
-  //               fontSize: 15.0,
-  //               fontWeight: FontWeight.bold),
-  //           // maxLength: 1,
-  //           //buildCounter: (BuildContext context, { int? currentLength, int? maxLength, required bool isFocused }) => null,
-  //           onChanged: onChanged(value)));
-  // }
-  //
-  // onChanged (value) {
-  //   if (value.isNotEmpty) {
-  //     setState(() {
-  //       _name = firstname as String;
-  //     });}
-  // }
-  // @override
-  // void dispose() {
-  //   super.dispose();
-  //   firstname.dispose();
-  //   lastname.dispose();
-  //   email.dispose();
-  //   dob.dispose();
-  // }
-  _pickDate() async {
-    DateTime? date = await showDatePicker(
+
+   // bool isselected = false;
+   // bool clickagain = false ;
+
+  getDatePicker() {
+    showDatePicker(
       context: context,
-      initialDate: pickedDate,
+      initialDate: DateTime.now(),
       firstDate: DateTime(DateTime.now().year - 60),
-      lastDate: DateTime(DateTime.now().year + 5),
-    );
-    if (date != null) {
+      lastDate: DateTime.now(),
+    ).then((value) {
+      if (value == null) {
+        return;
+      }
       setState(() {
-        pickedDate = dob as DateTime;
-        //_dateofbirth = "${pickedDate.day.toString()}/${pickedDate.month.toString()}/${pickedDate.year.toString()}" ;
+        pickedDate = value;
+        // isselected = true;
+        // clickagain = true;
+        _dateofbirth = DateFormat.yMMMMd().format(pickedDate);
       });
-    }
+      print(_dateofbirth);
+      // if( clickagain){
+      //   setState(() {
+      //     isselected = false;
+      //     clickagain = false;
+      //   });
+      // }
+    });
   }
 }

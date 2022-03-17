@@ -1,5 +1,5 @@
-{
-    "items": [
+
+    [
         {
             "id": 2,
             "name": "Default Category",
@@ -8,7 +8,7 @@
                 "4"
             ],
             "children": null,
-            "image": "https://dev.wallieboy.com/static/version1633507358/frontend/facon/facon4/en_US/Magestore_Webpos/images/category/image.jpg",
+            "image": "https://dev.wallieboy.com/media/catalog/category/t-shirt_1.jpeg",
             "position": 1,
             "level": 1,
             "first_category": 0,
@@ -27,7 +27,7 @@
                 "40"
             ],
             "children": null,
-            "image": "https://dev.wallieboy.com/static/version1633507358/frontend/facon/facon4/en_US/Magestore_Webpos/images/category/image.jpg",
+            "image": "https://dev.wallieboy.com/media/catalog/category/sweat-shirt_1.jpg",
             "position": 1,
             "level": 2,
             "first_category": 1,
@@ -43,11 +43,11 @@
                 "20",
                 "21",
                 "22",
-                "23",
+                "23"
 
             ],
             "children": null,
-            "image": "https://dev.wallieboy.com/static/version1633507358/frontend/facon/facon4/en_US/Magestore_Webpos/images/category/image.jpg",
+            "image": "https://dev.wallieboy.com/media/catalog/category/polo-tshirt_1.jpeg",
             "position": 2,
             "level": 2,
             "first_category": 1,
@@ -103,25 +103,14 @@
             "name": "Zip up hoodie",
             "children_ids": [],
             "children": null,
-            "image": "https://dev.wallieboy.com/media/catalog/category/media/catalog/category/Screenshot_2021-10-07_at_6.52.21_PM_1.png",
+            "image": "https://dev.wallieboy.com/media/catalog/category/polo-tshirt_1.jpeg",
             "position": 1,
             "level": 4,
             "first_category": 0,
             "parent_id": 11,
             "path": "1/2/3/11/12"
         },
-        {
-            "id": 15,
-            "name": "Shorts",
-            "children_ids": [],
-            "children": null,
-            "image": "https://dev.wallieboy.com/media/catalog/category/Screenshot_2021-10-01_at_4.50.45_PM_1.png",
-            "position": 1,
-            "level": 3,
-            "first_category": 0,
-            "parent_id": 4,
-            "path": "1/2/4/15"
-        },
+
         {
             "id": 16,
             "name": "Polo T shirt",
@@ -219,6 +208,18 @@
             "path": "1/2/4/23"
         },
         {
+            "id": 15,
+            "name": "Shorts",
+            "children_ids": [],
+            "children": null,
+            "image": "https://dev.wallieboy.com/media/catalog/category/Screenshot_2021-10-01_at_4.50.45_PM_1.png",
+            "position": 1,
+            "level": 3,
+            "first_category": 0,
+            "parent_id": 4,
+            "path": "1/2/4/15"
+        },
+        {
             "id": 26,
             "name": "Pocket T shirt",
             "children_ids": [],
@@ -311,16 +312,16 @@
             "path": "1/2/3/32/35"
         },
         {
-            "id": 36,
-            "name": "Formal Shirt",
+            "id": 41,
+            "name": "Regular Blazer",
             "children_ids": [],
             "children": null,
-            "image": "https://dev.wallieboy.com/media/catalog/category/media/catalog/category/formal-shirt_1.jpeg",
-            "position": 4,
+            "image": "https://dev.wallieboy.com/media/catalog/category/regualr-blazer_1.jpg",
+            "position": 1,
             "level": 4,
             "first_category": 0,
-            "parent_id": 32,
-            "path": "1/2/3/32/36"
+            "parent_id": 40,
+            "path": "1/2/3/40/41"
         },
         {
             "id": 37,
@@ -373,18 +374,7 @@
             "parent_id": 3,
             "path": "1/2/3/40"
         },
-        {
-            "id": 41,
-            "name": "Regular Blazer",
-            "children_ids": [],
-            "children": null,
-            "image": "https://dev.wallieboy.com/media/catalog/category/regualr-blazer_1.jpg",
-            "position": 1,
-            "level": 4,
-            "first_category": 0,
-            "parent_id": 40,
-            "path": "1/2/3/40/41"
-        },
+
         {
             "id": 42,
             "name": "Formal Blazer",
@@ -397,11 +387,4 @@
             "parent_id": 40,
             "path": "1/2/3/40/42"
         }
-    ],
-    "first_categories": [],
-    "search_criteria": {
-        "filter_groups": [],
-        "current_page": 1
-    },
-    "total_count": 30
-}
+    ]

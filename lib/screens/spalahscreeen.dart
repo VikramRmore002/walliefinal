@@ -21,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // Padding: EdgeInsets.all(0),
           loadingText: const Text(""),
           navigateAfterSeconds: const Card(
-            child: WallieHomePage(),
+            child: MyLogin(),
           ),
           seconds: 5,
           title: const Text(
