@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "source": "walliefinal",
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "walliefinal",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

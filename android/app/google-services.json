@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "295237680099",
+    "project_id": "wallie2",
+    "storage_bucket": "wallie2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295237680099:android:0fdd5114a47c7419087ed6",
+        "android_client_info": {
+          "package_name": "com.example.walliefinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295237680099-2mvr4obhlj4d0fmp3bvbrvhlbp7pcc47.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.walliefinal",
+            "certificate_hash": "479eb5b2c34f43c36a1801606b13ede6609cf675"
+          }
+        },
+        {
+          "client_id": "295237680099-4ljr6ss7ic3rpo3nu6pasm6h5k70f04o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm7FsG3Ge1C2i8bNk3GymMUbWMo3UzvIw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295237680099-4ljr6ss7ic3rpo3nu6pasm6h5k70f04o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

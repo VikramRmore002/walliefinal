@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="119" viewBox="0 0 120 119">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.3" y1="0.235" x2="1" y2="1.122" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f2f2f2"/>
+      <stop offset="1" stop-color="#ccc"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1398" data-name="Group 1398" transform="translate(-202 -41)">
+    <rect id="Rectangle_34" data-name="Rectangle 34" width="120" height="119" rx="5" transform="translate(202 41)" fill="url(#linear-gradient)"/>
+    <g id="fashion_1_" data-name="fashion (1)" transform="translate(238.125 79.031)">
+      <g id="Group_22" data-name="Group 22" transform="translate(0)">
+        <path id="Path_6" data-name="Path 6" d="M41.929,6.061,32.592,3.036a2.092,2.092,0,0,0-.7-.115h-.131L29.794.292A.73.73,0,0,0,29.3.006a.647.647,0,0,0-.092.007V0H14.6V.012a.647.647,0,0,0-.092-.007.73.73,0,0,0-.492.286L12.049,2.921h-.131a2.061,2.061,0,0,0-.678.109l-9.4,3.046A2.9,2.9,0,0,0,0,8.785V20.447a.73.73,0,0,0,.73.73H7.3V43.084a.73.73,0,0,0,.73.73H35.782a.73.73,0,0,0,.73-.73V21.177h6.572a.73.73,0,0,0,.73-.73V8.785A2.909,2.909,0,0,0,41.929,6.061ZM30.413,3.552,24.858,8.49,23,6.633l6.077-4.862ZM27.128,1.46,21.907,5.637,16.686,1.46Zm-12.391.307,6.075,4.866L18.954,8.49,13.4,3.552ZM42.354,19.716H36.512V15.335h-1.46V42.354H8.763V15.335H7.3v4.381H1.46V8.785a1.435,1.435,0,0,1,.876-1.336l9.37-3.036a.657.657,0,0,1,.21-.031h.219L18.5,10.039a.73.73,0,0,0,1-.03l2.4-2.4,2.4,2.4a.73.73,0,0,0,1,.03l6.365-5.658H31.9a.681.681,0,0,1,.228.037l9.311,3.015a1.445,1.445,0,0,1,.918,1.351Z" transform="translate(0)" stroke="#000" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>
